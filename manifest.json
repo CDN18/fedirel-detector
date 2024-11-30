@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "FediRel Detector",
+  "short_name": "FediRel",
+  "version": "1.0.0",
+  "description": "Detect Fediverse links and creator information",
+  "author": "CDN18",
+  "homepage_url": "https://github.com/CDN18/fedirel-detector",
+  "permissions": [
+    "activeTab"
+  ],
+  "action": {
+    "default_icon": {
+      "16": "icons/icon-no-link.png",
+      "48": "icons/icon-no-link.png",
+      "128": "icons/icon-no-link.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon-no-link.png",
+    "48": "icons/icon-no-link.png",
+    "128": "icons/icon-no-link.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}

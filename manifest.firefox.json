@@ -1,0 +1,13 @@
+{
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "cardinal@codeword.info",
+      "strict_min_version": "109.0"
+    }
+  }
+}

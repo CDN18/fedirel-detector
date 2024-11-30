@@ -1,0 +1,23 @@
+# Build output
+dist/
+*.zip
+
+# Dependency directories
+node_modules/
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Build artifacts
+*.crx
+*.pem
